@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roulette</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ondragstart="return false;" ondrop="return false;">
+    <div class="main">
+      <div class="container">
+        <div id="compte"></div>
+
+        <div class="roulette" id="roulette">
+          <p style="font-size: 42px;">Comment jouer ?</p>
+          <p>Si besoin, créditez votre compte</p>
+          <p>Choisissez le nombre de lignes sur lesquelles vous voulez parier</p>
+          <p>Choisissez la somme de votre pari par ligne</p>
+        </div>
+        <div class="cadrebtnroulette">
+          <div id="divgame">
+            <button class="btngame" id="game">Lancer la roulette</button>
+            <text class="txtgame" id="txtgame">Créditez votre compte !</text>
+          </div>
+        </div>
+        <div class="choix">
+          <div class="ajoutsomme">
+            <input type="number" placeholder="500" id="somme" value="500" class="champ" step="500" min="0">
+            <input type="submit" value="Créditer" class="btnsomme" id="btnsomme">
+            <div class="ajsom">
+              <div class="ajsomBtn">
+                <Text>500</Text>
+              </div>
+              <div class="ajsomBtn">
+                <Text>1000</Text>
+              </div>
+            </div>
+          </div>
+          <div class="divlignes">
+            <div class="divlignestitre">
+              <text class="titrechoixlignes">Nombre de lignes</text>
+            </div>
+            <div class="nbrelignes">
+              <div class="ajlignes">
+                <Text>1</Text>
+              </div>
+              <div class="ajlignes">
+                <Text>2</Text>
+              </div>
+              <div class="ajlignes">
+                <Text>3</Text>
+              </div>
+            </div>
+          </div>
+          <div class="pari">
+            <input type="number" placeholder="Pari par ligne" id="pari" value="150" class="champ champ-deux" step="50" min="0">
+            <div class="ajpari">
+              <div class="ajpariBtn">
+                <Text>50</Text>
+              </div>
+              <div class="ajpariBtn">
+                <Text>200</Text>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
